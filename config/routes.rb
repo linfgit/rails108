@@ -12,4 +12,7 @@ Rails.application.routes.draw do
                                     #end
                       # 这个嵌套的时候要运行 rake routes
   end
+  namespace :account do
+    resources :groups
+  end
 end
